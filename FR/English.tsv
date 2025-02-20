@@ -696,7 +696,7 @@
 			
 331	objAlice	Hey!!|| Tu devrais aller au Crazy Raven!	
 332	objAlice	C'est juste l'endroit le plus |{wiggle}COOL{/wiggle}| où trainer à Delphi!!	
-333	objAlice	Je travail absolument pas là-bas!!| C'est du simple bouche-à-oreille!!	
+333	objAlice	Je travaille absolument pas là-bas!!| C'est du simple bouche-à-oreille!!	
 334	objAlice	Ok,|| en fait,|| je travaille {wiggle}bien{/wiggle} au Raven.	
 336	objAlice	Je gère la publicité, les relations publics, les relations clients,
 337	objAlice	le planning, le bar, le son, l'éclairage, le nettoyage,	
@@ -1897,7 +1897,7 @@
 1536	objBard	Ça a l'air bon!	
 1537	objCandyman	Oui!!!||| Moi aussi j'adore!	
 1538	objCandyman	J'espère que les enfants seront du même avis.	
-1539	objCandyman	Je travail sur des paroles pour le jingle que t'as fait!	
+1539	objCandyman	Je travaille sur des paroles pour le jingle que t'as fait!	
 1540	objCandyman	{wiggle}Suuuuuuuuucre!{/wiggle}	
 1541	objCandyman	{wiggle}Bon|booooons...{/wiggle}	
 1542	objCandyman	{wiggle}Fri|an|diiiises...{/wiggle}	
@@ -11150,7 +11150,7 @@
 12133	objBard	{}Merci, Ruby!	
 12134	objBard	Je savais que t'étais pas {shake}VRAI|MENT{/shake} une peste!	
 12135	objRuby	{wiggle}{shake}...{/shake}	
-12136	objRuby	{wiggle}{speed .7}J'ai chantée l'Hymne pour toi.	
+12136	objRuby	{wiggle}{speed .7}J'ai chanté l'Hymne pour toi.	
 12137	objRuby	Vous pouvez sortir maintenant.	
 12138	objMatriarch	{}Toujours un plaisir,| Ruby.	
 12140	objMatriarch	Gamin,| soon as ya leave this house...	
@@ -12177,7 +12177,7 @@
 13298	objTroll	Allez-y et quittez notre foyer.	
 			
 13299	objTroll	{size 1.2}{shake}HUMAIN!	
-13300	objTroll	{size 1.2}{/shake}Oh,| c'est n'est que toi.	
+13300	objTroll	{size 1.2}{/shake}Oh,| ce n'est que toi.	
 13301	objTroll_friend	{}Tiens,| et si c'était pas...	
 13302	objBard	Mr. Mon|stre!	
 13303	objBard	Mon vieux pote!	
@@ -14436,8 +14436,8 @@
 1000020	-	Calliope	
 1000021	-	Candra	
 1000022	-	Jeb	
-1000023	-	Capitain	
-1000024	-	Capitain Lucas	
+1000023	-	Capitaine	
+1000024	-	Capitaine Lucas	
 1000025	-	Lou	
 1000026	-	Ash	
 1000027	-	Clyde	
