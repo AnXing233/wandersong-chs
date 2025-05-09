@@ -34,7 +34,7 @@ copy .\CHS\English.tsv ..\lang
 @REM move "..\ws_credits" old
 @REM copy .\FR\ws_credits ..
 
-echo √补丁安装成功 :D
+echo 【成功】补丁安装成功 :D
 ) else (  
 echo 【错误】补丁文件夹不在正确的目录中！
 echo 【注意】请确保您已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中！

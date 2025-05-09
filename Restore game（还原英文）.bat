@@ -12,15 +12,15 @@ if exist old\ (
 move "old\*.*" ".."
 move "old\lang\*.*" "..\lang"
 rmdir /S /Q old
-echo √ | 游戏已还原为英文
+echo 【成功】游戏已还原为英文
 ) else (
-echo X | “old”文件夹未找到
-echo ? | Apply patch.bat未生成old目录 或 old目录已被删除
-echo ! | 请使用Steam验证游戏文件的完整性，并还原文件
+echo 【错误】“old”文件夹未找到
+echo 【可能原因】Apply patch.bat未生成old目录 或 old目录已被删除
+echo 【注意】请使用Steam验证游戏文件的完整性，并还原文件
 )
 
 ) else (
-echo X | 文件不在正确的目录中
-echo ! | 请确保已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中
+echo 【错误】文件不在正确的目录中
+echo 【注意】请确保已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中
 )
 @pause
