@@ -1,6 +1,6 @@
 @echo off
 
-rem V�rifier que le r�pertoire est au bon endroit
+rem 检查目录是否位于正确的位置
 set "full_path=%cd%"
 set "sub_path=steamapps\common\Wandersong\PC\PatchCHS"
 
@@ -16,7 +16,7 @@ rmdir /S /Q old
 
 rem 创建一个old目录以保存备份
 mkdir old
-attrib +h old /s /d
+attrib old /s /d
 
 
 rem 主程序 - 应用data.win补丁
@@ -34,9 +34,9 @@ copy .\CHS\English.tsv ..\lang
 @REM move "..\ws_credits" old
 @REM copy .\FR\ws_credits ..
 
-echo O | 补丁安装成功！
-) else (
-echo X | 补丁文件夹不在正确的目录中！
-echo ! | 请确认您已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong”中！
+echo √补丁安装成功 :D
+) else (  
+echo 【错误】补丁文件夹不在正确的目录中！
+echo 【注意】请确保您已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中！
 )
 @pause

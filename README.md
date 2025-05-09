@@ -1,60 +1,53 @@
-# Wandersong en Français !!
-Après plus d'un an de travail, la fan-traduction française de Wandersong est fini et désormais disponible à tous ! Cette traduction a été réalisée entièrement seul, soyez donc indulgent en cas d'erreur, j'essaierais de mettre à jour régulièrement le patch pour corriger les soucis rencontrés.
+# Wandersong非官方简体中文翻译补丁
 
-Cette traduction n'est pour le moment disponible que sur Windows, je ne m'y connais hélas pas assez en Linux & MAC. Si des personnes sont volontaires pour m'aider à ce sujet, n'hésitez pas à me contacter ! 
+## 概述
+此项目为Wandersong的[Steam版本](https://store.steampowered.com/app/530320/Wandersong/)的简体中文翻译补丁脚本仓库，目前仅适用于Windows平台，Mac OS平台目前没有计划（指没有设备，不确定是否有需求）。
 
-Le patch a été prévu pour la version [Steam](https://store.steampowered.com/app/530320/Wandersong/) du jeu, si le besoin se fait savoir, j'essaierais d'également le rendre compatible avec la version GoG. Le patch n'est pas compatible avec la version Itch.io.
 
-Ce patch n'est également pas compatible avec les versions consoles (beaucoup trop contraignant techniquement)
+## 使用方法
+1. 在Release包发布页**下载补丁文件**
+2. 将文件解压后，你会得到一个**名为“PatchCHS”的文件夹，将该文件夹复制到Wandersong的游戏目录下**（".\steamapps\common\Wandersong\PC"）
+  - 如何找到游戏目录：
+    - 打开你的Steam库，找到Wandersong，
+    - 点击窗口右边的小齿轮，选择“管理”，点击“浏览本地文件”，弹出的资源管理器窗口就是游戏目录了
+3. 打开刚刚复制的PatchCHS文件夹，找到并**双击文件`“Apply patch（安装补丁）.bat”`**
+4. 运行完成后即可游玩
+   *备份文件将存放在PatchCHS/old文件夹。如果你想还原英文，找到并运行Restore game（还原英文）.bat 即可*
 
-# Comment ça marche ?
-- Premièrement, télécharger la dernière release : [https://github.com/TheFloFic/wandersong-fr/releases/download/V1.0.0/WandersongFR_V1.0.zip](https://github.com/TheFloFic/wandersong-fr/releases/download/V1.0.0/WandersongFR_V1.0.zip)
-- Déposer le répertoire "PatchFR" dans le répertoire ".\steamapps\common\Wandersong\PC"
-  - Allez sur Steam, clic droit sur le jeu, puis Propriétés
-  - Dans "Fichiers installés" cliquer sur "Parcourir..."
-  - Vous arrivez dans le répertoire "Wandersong"
-  - Coller le répertoire "PatchFR" dans le répertoire "PC"
-- *Dans le cas où vous avez une ancienne version du patch, vous pouvez l'écraser par la nouvelle*
-- Lancer le fichier "Patcher le jeu.bat"
-  - Ça fonctionne également même si vous avez déjà installé une ancienne version du patch
 
-Et voilà, votre jeu est désormais patché ! Vos anciens fichiers ont été placés dans le répertoire "old" (ne supprimez pas ce répertoire)
+## 疑问解答
+### 1. “X | 补丁文件夹不在正确的目录中！”
+请确保已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中，**不要重命名其他内容**
 
-# Problèmes
-## "Le patch ne se trouve pas dans le bon répertoire"
-### Le patch n'a pas été placé dans le bon répertoire
-Assurez-vous de bien déposer le répertoire "PatchFR" dans le répertoire "PC", faites aussi bien attention à ne rien renommer !
-### Mon chemin n'est pas exactement le même qu'indiqué
-C'est peut-être car vous avez installé Wandersong dans un autre répertoire non-prévu par Steam. Une sécurité a été mise en place pour éviter que le patch ne soit installé n'importe où et ne cause des soucis.
+### 2. 补丁脚本提供的路径不一样
+可能是把脚本文件放在Wandersong的目录下，而不是“\steamapps\common\wandersong\PC”这种Steam默认目录下
 
-Pour retirer cette sécurité, modifier le fichier "Patcher le jeu.bat", à la ligne 5, remplacer le contenu de la variable sub_path par "PatchFR"
-* Avant : set "sub_path=steamapps\common\Wandersong\PC\PatchFR"
-* Après : set "sub_path=PatchFR"
-## Mon jeu ne se lance plus
-Avez-vous bien exécuté votre patch sur la version Steam du jeu ? Le patch n'est actuellement pas compatible avec les version Itch.io et GoG
+你可以尝试修改 “Apply patch（安装补丁）.bat” 中的第5行，将sub_path的值改为“PatchCHS”
+* 修改前： `set "sub_path=steamapps\common\Wandersong\PC\PatchCHS"`
+* 修改后： `set "sub_path=PatchCHS"`
 
-Il est toujours possible de récupérer vos fichiers d'origine dans le répertoire "old"
-# "Dé-patcher" le jeu / Revenir à la version d'origine
-Il y a 2 méthodes possibles :
-## Remplacer les fichiers
-Le patch a automatiquement réalisé des backups de vos anciens fichiers, présents dans le répertoire "PatchFR\old".
+### 3. 我游戏打不开 
+该补丁仅适用于Steam版本。*itch.io和GoG版本暂时没有进行适配*
 
-L'outil "Dépatcher le jeu.bat" vous permet d'automatiquement dépatcher votre jeu et le rendre dans son état d'origine.
+你可以在`"old"`文件夹找到并还原你的文件
 
-## Re-télécharger le contenu
-Steam permet de vérifier l'intégrité des fichiers du jeu, en cas de différence, il va retélécharger les fichiers modifiés :
-* Aller sur Steam, clic droit sur le jeu, puis Propriétés
-* Dans "Fichiers installés", cliquer sur "Vérifier l'intégrité des fichiers du jeu"
-* Steam va retélécharger les fichiers modifiés
-* Votre jeu est de nouveau en Anglais
 
-# Contenu manquant
-Si vous êtes bien curieux, vous remarquerez peut-être que certains dialogues ne sont pas encore traduits. Le premier objectif était de traduire l'essentiel du jeu, ce qu'un joueur lambda rencontrera. Par la suite il reste :
-* Dialogues alternatifs
-* Dialogues secrets
-* Commentaire de développeur
+## 如何还原英文/把游戏换回英文
+有两种方法：
+### 1.手动还原
+- 备份文件已经保存在 `PatchCHS\old` 文件夹中，你可以找到该文件夹，并把里面的内容复制/移动到游戏的根目录，**替换同名文件**即可
+- 或者运行 `PatchCHS\Restore game（还原英文）.bat` 来完成上述动作
 
-L'idée est bien sûre de tout traduire, tout sera fait au fur et à mesure, et le patch sera mis à jour en conséquence !
+### 2.通过Steam重新下载内容
+- 打开你的Steam库，找到Wandersong
+- 点击窗口右边的**小齿轮⚙**，选择 **“属性”**
+- 在左列选项卡中找到并单击 **“已安装文件”**
+- 在右列选项中找到 **“验证游戏文件的完整性”**，等待下载完成
 
-# Crédits
-Le patcher a pu être rendu possible grâce à l'outil [xdelta3](https://github.com/Moodkiller/xdelta3-gui-2.0) (avec interface graphique)
+
+## 相关链接
+- 相关游戏：[Wandersong](https://wanderso.ng/)
+- 游戏批处理脚本基于项目[xdelta3](https://github.com/Moodkiller/xdelta3-gui-2.0)制作补丁
+
+## 制作人员名单
+- *（待补充）*

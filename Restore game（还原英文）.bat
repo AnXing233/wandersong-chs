@@ -1,8 +1,8 @@
 @echo off
 
-rem V�rifier que le r�pertoire est au bon endroit
+rem 检查目录是否位于正确的位置
 set "full_path=%cd%"
-set "sub_path=steamapps\common\Wandersong\PC\PatchFR"
+set "sub_path=steamapps\common\Wandersong\PC\PatchCHS"
 
 echo %full_path% | findstr /I /C:"%sub_path%" >nul
 
@@ -12,15 +12,15 @@ if exist old\ (
 move "old\*.*" ".."
 move "old\lang\*.*" "..\lang"
 rmdir /S /Q old
-echo Le jeu a correctement �t� d�patch�
+echo √ | 游戏已还原为英文
 ) else (
-echo Le r�pertoire "old" n'a pas �t� trouv�
-echo Le patch n'a pas encore �t� appliqu� ou le r�pertoire a �t� supprim�
-echo Dans un tel cas, veuillez passez par Steam, voir documentation
+echo X | “old”文件夹未找到
+echo ? | Apply patch.bat未生成old目录 或 old目录已被删除
+echo ! | 请使用Steam验证游戏文件的完整性，并还原文件
 )
 
 ) else (
-echo Le fichier ne se trouve pas dans le bon r�pertoire
-echo Le r�pertoire "PatchFR" doit �tre plac� dans ".\steamapps\common\Wandersong"
+echo X | 文件不在正确的目录中
+echo ! | 请确保已将“PatchCHS”文件夹放置在“\steamapps\common\wandersong\PC”中
 )
 @pause
