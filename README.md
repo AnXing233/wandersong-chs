@@ -43,8 +43,8 @@
 
 ## 相关链接
 - 相关游戏：[Wandersong](https://wanderso.ng/)
-- 游戏批处理脚本基于项目[xdelta3](https://github.com/Moodkiller/xdelta3-gui-2.0)制作补丁。Linux端的补丁应用程序为[xdelta3-gui-2.0.7
-版本下的附属发行包](https://github.com/Moodkiller/xdelta3-gui-2.0/releases/tag/v2.0.7)
+- 该项目基于[wandersong-fr](https://github.com/TheFloFic/wandersong-fr)制作
+- 游戏批处理脚本基于项目[xdelta3](https://github.com/Moodkiller/xdelta3-gui-2.0)制作补丁。Linux端的补丁应用程序为[xdelta3-gui-2.0.7版本下的附属平台包](https://github.com/Moodkiller/xdelta3-gui-2.0/releases/tag/v2.0.7)
 
 ## 制作人员名单
 - *（待补充）*
