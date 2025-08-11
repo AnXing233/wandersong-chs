@@ -85,7 +85,7 @@ wandersong-chs/
   - [西部苦力怕](https://space.bilibili.com/24886354)
 - 【翻译】
   - [XH](https://space.bilibili.com/249624222)
-  - Rico.Se7en
+  - [Rico.Se7en](https://space.bilibili.com/3776931)
   - [西部苦力怕](https://space.bilibili.com/24886354)
   - [平流层](https://space.bilibili.com/174533181)
 - 【程序】
