@@ -90,6 +90,7 @@ wandersong-chs/
   - [平流层](https://space.bilibili.com/174533181)
 - 【程序】
   - [AnXing233](https://space.bilibili.com/443074427)
+  - [西部苦力怕](https://space.bilibili.com/24886354)
 - 【美工】
   - [AnXing233](https://space.bilibili.com/443074427)
   - [XH](https://space.bilibili.com/249624222)
