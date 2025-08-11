@@ -19,7 +19,7 @@ attrib old /s /d
 
 
 rem 主程序 - 应用data.win补丁
-".\tools\xdelta-3.1.0-x86_64.exe" -v -d -s "..\data.win" ".\CHS\wandersong-patch_v0.3-0811.xdelta" "..\data.win.patch"
+".\tools\xdelta-3.1.0-x86_64.exe" -v -d -s "..\data.win" ".\CHS\wandersong-patch_v0.4-0811.xdelta" "..\data.win.patch"
 move "..\data.win" old
 ren "..\data.win.patch" "data.win"
 rem 主程序 - 应用exe补丁

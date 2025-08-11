@@ -23,7 +23,7 @@ fi
 tool_path="./tools/xdelta3"
 data_win="../data.win"
 exe_path="../wandersong.exe"
-data_win_chs="./CHS/wandersong-patch_v0.3-0811.xdelta"
+data_win_chs="./CHS/wandersong-patch_v0.4-0811.xdelta"
 exe_chs="./CHS/exe-wandersong-patch.xdelta"
 patch_file="../data.win.patch"
 exe_patch_file="../wandersong.exe.patch"
