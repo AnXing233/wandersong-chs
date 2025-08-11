@@ -19,14 +19,21 @@ attrib old /s /d
 
 
 rem 主程序 - 应用data.win补丁
-".\tools\xdelta-3.1.0-x86_64.exe" -v -d -s "..\data.win" ".\CHS\data.win.chs" "..\data.win.patch"
+".\tools\xdelta-3.1.0-x86_64.exe" -v -d -s "..\data.win" ".\CHS\wandersong-patch_v0.3-0811.xdelta" "..\data.win.patch"
 move "..\data.win" old
 ren "..\data.win.patch" "data.win"
+rem 主程序 - 应用exe补丁
+".\tools\xdelta-3.1.0-x86_64.exe" -v -d -s "..\wandersong.exe" ".\CHS\exe-wandersong-patch.xdelta" "..\wandersong.exe.patch"
+move "..\wandersong.exe" old
+ren "..\wandersong.exe.patch" "wandersong.exe"
 
 rem 移动语言文件
 mkdir old\lang
 move "..\lang\English.tsv" old\lang
 copy .\CHS\English.tsv ..\lang
+rem 移动ws_credits文件
+move "..\ws_credits" old\
+copy .\CHS\ws_credits ..\
 
 echo "🟢【成功】补丁安装成功 | Patch applied successfully! :D"
 ) else (  

@@ -22,8 +22,11 @@ fi
 # 定义工具路径和参数
 tool_path="./tools/xdelta3"
 data_win="../data.win"
-data_win_chs="./CHS/data.win.chs"
+exe_path="../wandersong.exe"
+data_win_chs="./CHS/wandersong-patch_v0.3-0811.xdelta"
+exe_chs="./CHS/exe-wandersong-patch.xdelta"
 patch_file="../data.win.patch"
+exe_patch_file="../wandersong.exe.patch"
 chs_dir="./CHS"
 lang_target_dir="../lang"
 
@@ -44,12 +47,23 @@ if [ ! -f "$data_win_chs" ]; then
     exit 1
 fi
 
+if [ ! -f "$exe_path" ]; then
+    echo "错误：$exe_path 文件不存在，请检查路径是否正确。"
+    exit 1
+fi
+
+if [ ! -f "$exe_chs" ]; then
+    echo "错误：$exe_chs 文件不存在，请检查路径是否正确。"
+    exit 1
+fi
+
 # 给补丁程序添加可执行权限
 chmod +x ./tools/xdelta3
 
 # 运行 xdelta3 程序
 echo "正在运行 xdelta3 程序..."
 "$tool_path" -v -d -f -S none -s "$data_win" "$data_win_chs" "$patch_file"
+"$tool_path" -v -d -f -S none -s "$exe_path" "$exe_chs" "$exe_patch_file"
 
 # 移动 ../data.win 到 ./old 文件夹
 if [ -f "../data.win" ]; then
@@ -69,6 +83,24 @@ else
     exit 1
 fi
 
+# 移动 ../wandersong.exe 到 ./old 文件夹
+if [ -f "../wandersong.exe" ]; then
+    mv "../wandersong.exe" "$old_dir"
+    echo "已将 ../wandersong.exe 移动到 $old_dir"
+else
+    echo "错误：../wandersong.exe 文件不存在。"
+    exit 1
+fi
+
+# 将 ../wandersong.exe.patch 重命名为 ../wandersong.exe
+if [ -f "../wandersong.exe.patch" ]; then
+    mv "../wandersong.exe.patch" "../wandersong.exe"
+    echo "已将 ../wandersong.exe.patch 重命名为 ../wandersong.exe"
+else
+    echo "错误：../wandersong.exe.patch 文件不存在。"
+    exit 1
+fi
+
 # 移动 ../lang/English.tsv 到 ./old/lang 文件夹
 if [ -f "../lang/English.tsv" ]; then
     mv "../lang/English.tsv" "$lang_dir"
@@ -84,6 +116,24 @@ if [ -f "$chs_dir/English.tsv" ]; then
     echo "已将 $chs_dir/English.tsv 复制到 $lang_target_dir"
 else
     echo "错误：$chs_dir/English.tsv 文件不存在。"
+    exit 1
+fi
+
+# 移动 ../ws_credits 到 ./old/ 文件夹
+if [ -f "../ws_credits" ]; then
+    mv "../ws_credits" "$old_dir"
+    echo "已将 ../ws_credits 移动到 $old_dir"
+else
+    echo "错误：../ws_credits 文件不存在。"
+    exit 1
+fi
+
+# 将 ./CHS/ws_credits 复制到 ../ 文件夹
+if [ -f "$chs_dir/ws_credits" ]; then
+    cp "$chs_dir/ws_credits" "../"
+    echo "已将 $chs_dir/ws_credits 复制到 ../"
+else
+    echo "错误：$chs_dir/ws_credits 文件不存在。"
     exit 1
 fi
 
