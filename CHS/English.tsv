@@ -7361,7 +7361,7 @@ lineID	SPEAKER	ENGLISH
 8713	objMiriam	都让你力不从心。
 8714	objMiriam	你甚至没有任何能力，
 8715	objMiriam	比如我...
-8717	objMiriam	但你没有弃尝试。
+8717	objMiriam	但你没有放弃尝试。
 8718	objMiriam	即使毫无希望可言。
 8719	objMiriam	我真的...
 8720	objMiriam	...
@@ -11589,7 +11589,7 @@ lineID	SPEAKER	ENGLISH
 13281	objTroll	{size 1.2}我让你们进来。
 13283	objMiriam	看起来挺难的。
 13284	objMiriam	确定不让我来处理吗？
-13285	objBard	{shake}不！！{/shake}||我自己能行！
+13285	objBard	{shake}不！！{/shake}||我能行！
 13286	objBard	这次我会唱得更卖力！！
 13287	objTroll	{size 1.2}上来这儿，|人类！
 13289	objTroll	{size 1.2}请试着唱歌！
