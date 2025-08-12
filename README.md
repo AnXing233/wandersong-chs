@@ -29,7 +29,7 @@ wandersong-chs/
         xdelta3_mac
 ```
 ## 使用方法
-1. 在[Release包发布页](https://github.com/AnXing233/wandersong-chs/releases)**下载补丁文件**
+1. 在[Github Release包发布页](https://github.com/AnXing233/wandersong-chs/releases)或[Gitee Release包发布页](https://gitee.com/anxing233/wandersong-chs/releases)**下载补丁文件**
 2. 将文件解压后，你会得到一个文件夹，**将该文件夹复制到Wandersong的游戏目录下**（参考目录`"C:\Program Files (x86)\Steam\steamapps\common\Wandersong\PC\"`）
     - 如何找到游戏目录：
       - 打开你的Steam库，找到Wandersong，
