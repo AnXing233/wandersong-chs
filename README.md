@@ -2,6 +2,7 @@
 ![alt text](image/small.png)
 ## 概述
 此项目为Wandersong的[Steam版本](https://store.steampowered.com/app/530320/Wandersong/)的简体中文翻译补丁脚本仓库，目前仅适用于Windows、Linux（实验性，需要在库中的属性菜单打开“兼容性”下的 **“强制使用Steam Play兼容性工具”**，proton即可）平台，Mac OS平台目前没有计划（指没有设备，不确定是否有需求）。
+该补丁协议为[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## 补丁目录结构
 ```bash
@@ -11,6 +12,7 @@ wandersong-chs/
 │   README.md
 │   Restore game（还原英文）.bat
 │   uninstall.sh
+│   LICENSE
 │
 ├───CHS
 │       English.tsv
