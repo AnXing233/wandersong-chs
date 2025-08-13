@@ -1,4 +1,5 @@
 # Wandersong简体中文翻译补丁
+宣传视频：[【汉化】流浪之歌/Wandersong汉化补丁发布（Bilibili）](https://www.bilibili.com/video/BV1aotZzqEe9)
 ![alt text](image/small.png)
 ## 概述
 此项目为Wandersong的[Steam版本](https://store.steampowered.com/app/530320/Wandersong/)的简体中文翻译补丁脚本仓库，目前仅适用于Windows、Linux（实验性，需要在库中的属性菜单打开“兼容性”下的 *“强制使用Steam Play兼容性工具”*，proton即可）平台，Mac OS平台目前没有计划（指没有设备，不确定是否有需求）。
@@ -33,7 +34,7 @@ wandersong-chs/
 2. 将文件解压后，你会得到一个文件夹，**将该文件夹复制到Wandersong的游戏目录下**（参考目录`"C:\Program Files (x86)\Steam\steamapps\common\Wandersong\PC\"`）
     - 如何找到游戏目录：
       - 打开你的Steam库，找到Wandersong，
-      - 点击窗口右边的小齿轮，选择“管理”，点击“浏览本地文件”，弹出的资源管理  器窗口就是游戏目录了
+      - 点击窗口右边的小齿轮，选择“管理”，点击“浏览本地文件”，弹出的资源管理器窗口就是游戏目录了
 3. 打开刚刚复制的文件夹里面（理想情况下是`游戏根目录\wandersong-chs\`）
   - Windows端：找到并**双击文件`“Apply patch（安装补丁）.bat”`**
   - Linux端：打开右键菜单，选择 **“在终端中打开(Open in Terminal)”**，在终端窗口输入`sudo sh ./install.sh`并回车
